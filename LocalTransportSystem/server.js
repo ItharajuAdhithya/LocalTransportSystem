@@ -5,6 +5,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Local Transport System API is running 🚀");
+});
+
 let students = [];
 let passes = [];
 let routes = [];
