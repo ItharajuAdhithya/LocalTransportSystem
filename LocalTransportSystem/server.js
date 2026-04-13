@@ -52,6 +52,8 @@ passes.push(pass);
 res.json(pass);
 });
 
+console.log("Server starting...");
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
